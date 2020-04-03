@@ -66,6 +66,7 @@ public final class StaticEtherTypePacketFactory implements PacketFactory<Packet,
         case 0x0806:
           return ArpPacket.newPacket(rawData, offset, length);
         case 0x8100:
+        case 0x88a8:
           return Dot1qVlanTagPacket.newPacket(rawData, offset, length);
         case 0x86dd:
           return IpV6Packet.newPacket(rawData, offset, length);
@@ -100,6 +101,7 @@ public final class StaticEtherTypePacketFactory implements PacketFactory<Packet,
         case 0x0806:
           return ArpPacket.newPacket(rawData, offset, length);
         case 0x8100:
+        case 0x88a8:
           return Dot1qVlanTagPacket.newPacket(rawData, offset, length);
         case 0x86dd:
           return IpV6Packet.newPacket(rawData, offset, length);
@@ -115,6 +117,7 @@ public final class StaticEtherTypePacketFactory implements PacketFactory<Packet,
         case 0x0806:
           return ArpPacket.newPacket(rawData, offset, length);
         case 0x8100:
+        case 0x88A8:
           return Dot1qVlanTagPacket.newPacket(rawData, offset, length);
         case 0x86dd:
           return IpV6Packet.newPacket(rawData, offset, length);
@@ -139,6 +142,7 @@ public final class StaticEtherTypePacketFactory implements PacketFactory<Packet,
           case 0x0806:
             return ArpPacket.newPacket(rawData, offset, length);
           case 0x8100:
+          case 0x88A8:
             return Dot1qVlanTagPacket.newPacket(rawData, offset, length);
           case 0x86dd:
             return IpV6Packet.newPacket(rawData, offset, length);

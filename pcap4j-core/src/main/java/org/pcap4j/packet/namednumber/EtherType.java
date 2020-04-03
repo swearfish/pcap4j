@@ -38,6 +38,10 @@ public final class EtherType extends NamedNumber<Short, EtherType> {
   public static final EtherType DOT1Q_VLAN_TAGGED_FRAMES =
       new EtherType((short) 0x8100, "IEEE 802.1Q VLAN-tagged frames");
 
+  /** IEEE 802.1Q VLAN-tagged frames: 0x88A8 */
+  public static final EtherType DOT1Q_VLAN_2ND_TAGGED_FRAMES =
+          new EtherType((short) 0x88a8, "IEEE 802.1Q 2nd VLAN-tagged frames");
+
   /** RARP: 0x8035 */
   public static final EtherType RARP = new EtherType((short) 0x8035, "RARP");
 
